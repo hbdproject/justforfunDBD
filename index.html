@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>디비디비딥</title>
+        <link rel="stylesheet" href="./css/style.css">
+
+        <script>
+            //메인 트위터로 공유하기
+            function shareTwitter() {
+                var sendText = "재미로 하는 디비디비딥"; // 전달할 텍스트
+                var sendUrl = "https://hbdproject.github.io/justforfunDBD/"; // 전달할 URL
+                window.open("https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>
+                <span>just for fun</span><br>디비디비딥
+            </h1>
+        </div>
+        <div class="content-wrap">
+            <div id="score">
+                0
+            </div>
+            <div id="start">
+                <button id="btn">디노와 한 판 붙기</button>
+                <button id="end_share" style="display:none">점수 자랑하기</button>
+            </div>
+            <div class="img">
+                <img src="./assets/images/디노_0.png" alt="디노 대기" id="dino">
+                <img src="./assets/images/정한_0.png" alt="정한 대기" id="jeonghan">
+            </div>
+            <div class="dbd_btn">
+                <button id="rock" class="choice" disabled="disabled">묵</button>
+                <button id="scissor" class="choice" disabled="disabled">찌</button>
+                <button id="paper" class="choice" disabled="disabled">빠</button>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="javascript:shareTwitter()" class="btn_link">
+                트위터로 공유하기
+            </a>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="./js/common.js"></script>
+
+</html>
